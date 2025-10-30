@@ -176,7 +176,7 @@ workspace "CitizenMP"
 
 		buildoptions { '/Zc:preprocessor' }
 
-		systemversion '10.0.22000.0'
+		systemversion '10.0.26100.0'
 	else
 		vectorextensions 'SSSE3'
 	end
@@ -523,7 +523,7 @@ if _OPTIONS['game'] ~= 'launcher' then
 			kind 'SharedLib'
 			
 			disablewarnings 'CS1591' -- Missing XML comment for publicly visible type or member
-			dotnetframework '4.6'
+			dotnetframework '4.8.1'
 			buildoptions '/debug:portable /langversion:7.3'
 			csversion '7.3'
 			

@@ -12,7 +12,7 @@ mkdir -p /tmp/dotnet
 cd /tmp/dotnet
 
 dotnet new console
-dotnet nuget add source 'https://pkgs.dev.azure.com/dnceng/public/_packaging/dotnet-eng/nuget/v3/index.json' || true
+dotnet nuget add source 'https://api.nuget.org/v3/index.json' || true
 dotnet add package Microsoft.DotNet.GenAPI -v 6.0.0-beta.21063.5
 
 dotnet ~/.nuget/packages/microsoft.dotnet.genapi/6.0.0-beta.21063.5/tools/netcoreapp2.1/Microsoft.DotNet.GenAPI.dll \
